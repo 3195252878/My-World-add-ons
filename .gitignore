@@ -1,0 +1,24 @@
+# Rust build output
+/target/
+/build.log
+/build_log.txt
+/build.err
+
+# Local binaries and app-generated files
+*.exe
+*.exe.bak
+*.pdb
+/mc_tool_config.json
+/mc_tool_config.json.tmp
+/mc-tool-backup-*.json
+/mod_items_zh.json
+/mod_entities_zh.json
+/*.mcfunction
+/数据包/
+
+# Editor and operating system files
+/.idea/
+/.vscode/
+Thumbs.db
+Desktop.ini
+.DS_Store

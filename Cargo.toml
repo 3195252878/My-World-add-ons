@@ -1,0 +1,21 @@
+[package]
+name = "minecraft_tool"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.27"
+egui = "0.27"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+image = { version = "0.25", default-features = false, features = ["ico"] }
+zip = { version = "2", default-features = false, features = ["deflate"] }
+
+[target.'cfg(windows)'.dependencies]
+winreg = "0.56"
+
+[profile.release]
+opt-level = "s"
+lto = true
+strip = true
+codegen-units = 1
